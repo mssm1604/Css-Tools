@@ -1,0 +1,150 @@
+main {
+  display: flex;
+  gap: 40px;
+
+  margin-inline: 30px;
+}
+
+.bezier_curve_section {
+  justify-content: flex-end;
+  gap: 25px;
+  width: 33%;
+  height: 100dvh;
+
+  color: #000;
+  background: #d9d9d9;
+
+  .bezier_curve_body {
+    gap: 50px;
+
+    .title_wrapper {
+      position: relative;
+      margin-inline: auto;
+
+      font-family: 'Nohemi sans';
+
+      .title_h2 {
+        font-size: 40px;
+        font-weight: 400;
+      }
+
+      .title_span {
+        position: absolute;
+        right: -50px;
+        bottom: -20px;
+
+        font-size: 22px;
+        font-weight: 100;
+      }
+    }
+
+    .canvas_wrapper {
+      justify-content: center;
+      border: 1px solid #000;
+      background: whitesmoke;
+      width: 80%;
+      /* height: 500px; */
+
+      margin-inline: auto;
+    }
+  }
+
+  .bezier_section_footer {
+    position: relative;
+    padding-block: 5px 30px;
+    color: #fff;
+
+    .params_wrapper {
+      width: 80%;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      margin-inline: auto;
+
+      border: 1px solid rgba(0, 0, 0, 0.5);
+      background: #b3b3b3;
+
+      .input_params {
+        width: 70px;
+        padding: 7px 0px 7px 8px;
+
+        font: normal 100 17px 'Nohemi Sans';
+        color: #fff;
+        border: 0.5px solid #000;
+        background: #8eb4c5;
+      }
+
+      .input_params:focus-visible {
+        outline: none;
+      }
+    }
+
+    .bezier_result_wrapper {
+      align-items: center;
+      position: absolute;
+      gap: 10px;
+
+      top: 3px;
+      right: -345px;
+
+      .results_info {
+        position: relative;
+        width: 355px;
+        align-items: center;
+        gap: 15px;
+        padding: 10px;
+
+        background: #000;
+        color: #d8d8d8;
+
+        font: normal 100 17px 'Nohemi sans';
+        line-height: 17px;
+        letter-spacing: 0.22px;
+        cursor: pointer;
+
+        .clipboard_icon {
+          opacity: 0;
+          height: 18px;
+
+          transition: opacity 150ms ease-out;
+        }
+
+        .results_tooltip {
+          position: absolute;
+          align-items: center;
+          gap: 5px;
+          padding: 5px 20px;
+          opacity: 0;
+          right: 0;
+          top: -35px;
+
+          background-color: #22222a;
+
+          transition: opacity 150ms ease-out;
+          pointer-events: none;
+        }
+
+        .results_tooltip svg {
+          width: 18px;
+          height: 18px;
+        }
+
+        .results_tooltip.active {
+          opacity: 1;
+        }
+      }
+
+      .results_info:hover .clipboard_icon {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.demos_wrapper {
+  /* position: relative; */
+  width: 77%;
+  height: 550px;
+
+  margin-block: auto;
+  overflow: hidden;
+}

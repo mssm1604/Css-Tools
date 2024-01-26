@@ -1,0 +1,85 @@
+@font-face {
+  font-family: 'Nohemi sans';
+  src: url(./fonts/Nohemi-ExtraLight-BF6438cc57e06d5.otf);
+
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: 'Nohemi sans';
+  src: url(./fonts/Nohemi-Light-BF6438cc583f70b.otf);
+
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: 'Nohemi sans';
+  src: url(./fonts/Nohemi-Medium-BF6438cc581a509.otf);
+
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Nohemi sans';
+  src: url(./fonts/Nohemi-Regular-BF6438cc58b98fc.otf);
+
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Nohemi sans';
+  src: url(./fonts/Nohemi-SemiBold-BF6438cc588b5e5.otf);
+
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Nohemi sans';
+  src: url(./fonts/Nohemi-ExtraBold-BF6438cc58a4c3c.otf);
+
+  font-weight: 600;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Nohemi sans';
+  background: #131313;
+  color: #f7f7f7;
+
+  min-height: 100dvh;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-content: center;
+}
+
+/* #canvas {
+  margin: 100px; 
+} */

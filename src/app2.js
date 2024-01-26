@@ -6,37 +6,14 @@ const offSetPoints = {
   y: 100
 }
 
-style = {
-  curve: { width: 1, color: '#0044ff' },
-  cpline: { width: 1, color: '#cccccf' },
-  point: {
-    radius: 4,
-    width: 1,
-    color: '#0044ff',
-    fill: '#0044ff',
-    arc1: 0,
-    arc2: 2 * Math.PI
-  },
-  cpoint: {
-    radius: 6,
-    width: 1,
-    color: '#0044ff',
-    fill: '#ffffff',
-    arc1: 0,
-    arc2: 2 * Math.PI
-  },
-  cpoint1: { fill: '#ffffff', fillNeg: '#ffffff' },
-  cpoint2: { fill: '#ffffff', fillNeg: '#ffffff' }
-}
-
 const controlPoints = {
   cp1: {
-    x: 245, //0.65 * 300 + offSetPoints.x
-    y: 385 //canvas.height - (0.05 * 300 + offSetPoints.y)
+    x: 245, //0.65 * 300 + offSetPoints.x    // 0.65 * 200 + 50  
+    y: 385 //canvas.height - (0.05 * 300 + offSetPoints.y) // canvas.height - (0.05 * 200 + offSetPoints.y)
   },
   cp2: {
-    x: 158, //0.36 * 300 + offSetPoints.x
-    y: 100 //canvas.height - (1 * 300 + offSetPoints.y)
+    x: 158, //0.36 * 300 + offSetPoints.x   // 0.36 * 200 + 50 
+    y: 100 //canvas.height - (1 * 300 + offSetPoints.y)   // 
   }
 }
 
@@ -107,7 +84,7 @@ function DrawCanvas() {
   ctx.restore()
 
   ctx.save()
-  
+
   //Bezier curve
   ctx.beginPath()
   ctx.moveTo(offSetPoints.x + 4, canvas.height - offSetPoints.y)
