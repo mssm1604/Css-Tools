@@ -7,9 +7,16 @@ export function Header() {
         <h4>CssTools</h4>
 
         <ul className='flex-row nav_items_wrapper'>
-          <span className='current_page' data-current-page='transitions'>you&apos;re here</span>
-          <li>Transitions</li>
-          <li>Shadows</li>
+          <span className='current_page' data-current-page='/'>
+            you&apos;re here
+          </span>
+          <li>
+            {' '}
+            <a href='/#'>Transitions</a>
+          </li>
+          <li>
+            <a href='/#'>Shadows</a>
+          </li>
         </ul>
       </nav>
     </header>

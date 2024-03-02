@@ -58,14 +58,14 @@ export function useMainSectionBc() {
   }
 
   const handleResultsFieldOnClick = async () => {
-    const copiedMessage = document.querySelector('.results_tooltip')
+    const messageToCopy = document.querySelector('.results_tooltip')
 
     try {
       await navigator.clipboard.writeText(cubicBezierValue)
-      copiedMessage.classList.add('active')
+      messageToCopy.classList.add('active')
 
       setTimeout(() => {
-        copiedMessage.classList.remove('active')
+        messageToCopy.classList.remove('active')
       }, 800)
     } catch (error) {
       console.error('there was an error trying to copy this', error)

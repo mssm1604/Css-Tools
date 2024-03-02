@@ -36,12 +36,28 @@
         top: -9px;
       }
 
-      .current_page[data-current-page='transitions'] {
+      .current_page[data-current-page='/'] {
         left: 30px;
       }
 
       .current_page[data-current-page='shadows'] {
         left: 30px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .navbar_wrapper {
+    position: relative;
+    width: 100%;
+    top: 0;
+
+    .navbar {
+      width: 100%;
+      .nav_items_wrapper {
+        flex-direction: column;
+        gap: 10px;
       }
     }
   }
