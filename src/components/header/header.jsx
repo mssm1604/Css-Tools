@@ -14,9 +14,6 @@ export function Header() {
             {' '}
             <a href='/#'>Transitions</a>
           </li>
-          <li>
-            <a href='/#'>Shadows</a>
-          </li>
         </ul>
       </nav>
     </header>
